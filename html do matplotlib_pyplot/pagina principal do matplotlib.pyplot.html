@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>apenda pyplot</title>
+  <link rel="stylesheet" href="css_matplotlib_pyplot.css">
+</head>
+<body>
+  <header>
+    <div id="header">
+      <h1>Quia do matplotlib.pyplot</h1>
+      <p id="p_baixo_h1">Uma introdução completa à criação de gráficos em Python</p>
+    </div>
+    <div id="div_introducao">
+      <h2>Introdução</h2>
+      <p>O <strong>pyplot</strong> é um módulo do <strong>Matplotlib</strong> , uma das bibliotecas mais populares do Python para criar visualizações de dados.
+        Ele fornece uma interface simples e intuitiva, inspirada no estilo de comandos do MATLAB,
+        para criar gráficos como linhas, barras, dispersões, histogramas, entre outros.
+          O Pyplot permite que os desenvolvedores gerem gráficos 2D de forma eficiente e com grande personalização, sendo amplamente utilizado em ciência de dados, aprendizado de máquina e análise estatística.
+      </p>
+      <p>
+        A <strong>estrutura básica</strong>  do Pyplot funciona por meio de uma abordagem estadoful: você cria gráficos incrementando comandos que ajustam elementos da visualização, como adicionar linhas, rótulos e títulos.
+        É possível personalizar cores, estilos de linha, tamanhos de marcadores, escalas e até mesmo criar gráficos complexos combinando múltiplos subplots.
+      </p>
+      
+    </div>
+    
+  </header>
+    <div class="divs_com_img">
+      <h3 class="class_pergumtas">
+      Por que usar Pyplot?
+      </h3>
+      <p>
+        O <strong>Pyplot</strong>  é uma ferramenta poderosa e fácil de usar para criar <strong>gráficos em Python</strong> . Ele oferece uma grande variedade de tipos de gráficos (linha, dispersão, barras, etc.),
+        alta personalização, integração com bibliotecas como numpy e pandas, suporte a gráficos avançados (3D, animações) e exportação em alta qualidade.
+        É amplamente utilizado em ciência de dados, aprendizado de máquina, análises financeiras e educação, sendo ideal para explorar dados e apresentar resultados de forma clara e profissional.
+      </p>
+      <strong class="exemplos_center">Exemplo simples:</strong>
+      <div class="div_img_center">
+        <div class="code_div_img_center">
+          <code>
+            <div>
+              <div class="div_python">
+                <p class="p_code">Python</p>
+              </div>
+              <div id="div_python">
+                <p class="p_code">Python</p>
+             </div> 
+            </div>
+           
+            <pre class="pre_div_img_center">
+
+<span class="v">import</span> matplotlib.pyplot <span class="v">as</span> plt
+
+anos = [<span class="r">2017, 2018, 2019, 2020, 2021, 2022</span>]
+seila = [<span class="r">150, 200, 250, 110, 190, 130</span>]
+
+plt.plot(anos, vendas, <span class="l">marker='o'</span>)
+plt.title(<span class="g">"Vendas Anuais"</span>)
+plt.show()
+
+            </pre>
+          </code>
+        </div>
+        <div class="code_div_img_center">
+          <code>
+            <pre class="pre_div_img_center1">
+
+<span class="v">import</span> matplotlib.pyplot<span class="v"> as</span>  plt
+
+anos = [<span class="r">2017, 2018, 2019, 2020, 2021, 2022</span>]
+seila = [<span class="r">150, 200, 250, 110, 190, 130</span>]
+
+plt.bar(anos, vendas)
+plt.title(,<span class="g">"Vendas Anuais"</span> )
+plt.show()
+
+            </pre>
+          </code>
+        </div>
+        
+        
+        
+        <figure class="img_div_img_center">
+          <img class="imgs_juntas1" src="imagens/grafico 1 para o html.png" alt="exemplo simples de um gráfico em pyplot">
+        </figure>
+        <figure class="img_div_img_center">
+          <img class="imgs_juntas1" src="imagens/grafico 2 para o html.png" alt="exemplo simples de um gráfico em pyplot">
+        </figure>
+      </div>
+    </div>
+  <main>
+    <div>
+      <div id="div_falsoh1">
+        <h2 class="impor_h1" id="falsoh1">Estrutura Básica do Pyplot</h2>
+        <p id="p_falsoh1">
+          A estrutura básica do Pyplot para criar gráficos é simples e segue um fluxo comum de etapas:
+          preparar os dados, gerar o gráfico e opcionalmente personalizar.
+        </p>
+      </div>
+      
+      <ol>
+        <div class="divs" id="importacao">
+          <li>
+            <h3 class="etapas" id="importa">Impotação do pyplot</h3> 
+            <p class="p_center">
+              Primeiro, você precisa importar o Pyplot, geralmente com o alias plt:
+            </p>
+            <code>
+              <pre class="precode">
+<span class="v">import</span> matplotlib.pyplot <span class="v">as</span>  plt
+              </pre>
+            </code>
+          </li>
+        </div>
+        <li>
+        <div>
+          <div class="divs" id="div_preparacao">
+                <h3 class="etapas" id="preparacao_h3">Preparação dos Dados</h3>
+                <p>
+                  A preparação dos dados é uma das etapas mais importantes ao trabalhar com Pyplot, pois define como as informações serão interpretadas e exibidas no gráfico.
+                 Essa etapa envolve organizar os dados de entrada, geralmente como listas, arrays ou estruturas de dados mais complexas, como DataFrames do pandas.<br><br> <span class="span_negrito">Aqui estão os principais detalhes</span>:
+                </p>
+                <div id="div_FormatosdeDadosAceitos">
+                  <h3>
+                    <span class="title_PreparaçãodosDado">1. <strongn>Formatos de Dados</strongn></span> 
+                  </h3> 
+                  <p>
+                    O Pyplot é muito flexível e aceita diversos formatos de dados para os eixos x e y:
+                 </p>
+                 <div id="div_lista_FormatosdeDadosAceitos">
+                  <ol class="lista_ol">
+                    <p class="cp">
+                      Listas Python (list):<span class="p">Boa compatibilidade, Flexíveis e simples de usar</span>
+                      <br>
+                      <br>
+                     Tuplas Python (tuple):<span class="p">Imutabilidade, Eficiência e simples de usar</span> 
+                      <br>
+                      <br>
+                     Arrays NumPy (numpy.array):<span class="p">operações vetorizadas, multidimensionais e <br>suporte a operações Avançadas</span> 
+                      <br>
+                      <br>
+                     DataFrames do pandas (pandas.DataFrame):<span class="p">estrutura tabular, visualização de tendências <br>ou comparações entre categorias e limpeza de dados</span> 
+                      <br>
+                      <br>
+                     Valores Calculados:<span class="p">dados dinamicos e gráficos matemáticos</span>   
+                    </p> 
+                    <a href="subpaginas/formados de dados aceitos.html">formados de dados aceitos</a>
+                  </ol> 
+                 </div>
+                 
+                </div>
+                <div id="div_Correspondênciaentrexey">
+                  <h3>
+                    <span class="title_PreparaçãodosDado">2.<strong> Correspondência entre x e y</strong></span>
+                  </h3>
+                  <p>
+                    Os eixos x e y precisam ter o mesmo número de elementos, pois cada valor de x será associado a um valor correspondente de y.
+                  </p>
+                  <p>
+                    Exemplo:
+                  </p>
+                  <div>
+                    <code>
+                      <div class="div_code">
+                        <p class="p_code">Python</p>
+                      </div>
+                      <pre class="precode">
+  x <span class="v">=</span> [1, 2, 3]
+  y <span class="v">=</span> [10, 20, 30]  # OK: Mesma quantidade de elementos
+
+                      </pre>
+                    </code>
+                  </div>  
+                </div>
+                <div id="div_resumo">
+                  <strong>resumo</strong>
+                  <p>
+                    A preparação dos dados consiste em:
+                    <ol>
+                      <li>Escolher o formato apropriado (lista, array, DataFrame, etc.).</li>
+                      <li>Garantir que os eixos x e y tenham a mesma quantidade de elementos.</li>
+                      <li>Processar ou transformar os dados, se necessário, antes de passá-los ao Pyplot.</li>
+                    </ol>
+                  </p>  
+                </div>
+                
+          </div>
+              <div>
+                <li>
+                  <h3>Criação do Gráfico</h3>
+                  <p>
+                    A criação do gráfico no Pyplot é feita escolhendo a função apropriada para o tipo de gráfico e passando os dados necessários. Os principais passos são:
+                  </p>
+                  <ol>
+                    <li>
+                      <strong>Escolha do Tipo de Gráfico</strong>
+                      <p>
+                        O Pyplot oferece diversas funções para gráficos específicos, como:
+                      </p>
+                      <div>
+                        <ol>
+                          <li>
+                            <strong> Gráfico de Linha (plt.plot):</strong>
+                            <p>
+                              Utilizado para representar dados contínuos ou tendências ao longo de um intervalo. Ideal para mostrar a relação entre duas variáveis em uma progressão.
+                              <br>Exemplo: média de usuários ao longo do ano.
+                            </p>
+                            <div>
+                              <code>
+                                <pre>
+
+      meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+      novos_usuarios = [100, 80, 110, 130, 130, 160, 170, 120, 110, 150, 200, 140]
+
+      plt.plot(meses, novos_usuarios)  # Cria uma linha conectando os pontos (1, 4), (2, 5) e (3, 6)
+      plt.show()
+                                </pre>
+                              </code>
+                            </div>
+                            <div>
+                              <img src="imagens/exemplo_graflinhas_html.png" alt="gráfico simples de linha">
+                            </div>
+                            
+                          </li>
+                          <li>
+                            <strong>Gráfico de Dispersão (plt.scatter):</strong>
+                            <p>
+                              Mostra a relação entre dois conjuntos de dados por meio de pontos no plano cartesiano. Muito útil para visualizar correlações ou padrões.
+                              <br>Exemplo: nota e tempo de estudo de 20 alunos.
+                            </p>
+                              <div>
+                                <code>
+                                  <pre>
+
+        tempo_estudo = [1, 3, 1, 3, 3, 7, 1, 3, 3, 5, 7, 6, 4, 4, 3, 6, 6, 5, 5, 2]
+        notas = [4, 7, 2, 4, 5, 8, 6, 8, 5, 9, 10, 8, 7, 6, 8, 9, 7, 10, 9, 6]
+
+        plt.scetter(tempo_estudo, notas)  # Plota pontos individuais para cada par de (x, y)
+        plt.show()
+                                  </pre>
+                                </code>
+                              </div>
+                              <div>
+                                <img src="imagens/exemplo_grafdisperção_html.png" alt="gráfico simples de dispersão">
+                              </div>
+                            
+                          </li>
+                          <li>
+                            <strong>Gráfico de Barras (plt.bar):</strong>
+                            <p>
+                              Ideal para comparar valores de categorias distintas. As barras representam a magnitude de cada categoria.
+                              <br>Exemplo: vendas de produtos em diferentes meses.
+                            </p>
+                            <div>
+                              <code>
+                                <pre> 
+
+      receita_mensal = [10000, 7000, 9800, 20000, 17000]
+      meses = ["2021", "2022", "2023", "2024", "2025"]
+      
+      plt.bar(meses, receita_mensal)  # Plota barras com alturas baseadas nos valores
+      plt.show() 
+                                </pre>
+                              </code>
+                            </div>
+                            <div>
+                              <img src="imagens/exemplo_grafbarras_html.png" alt="gráfico simples de barras">
+                            </div>
+                            
+                          </li>
+                          <li>
+                            <strong>Histograma (plt.hist(dados, bins=n)):</strong>
+                            <p>
+                              Representa a distribuição de frequência de um conjunto de dados. Divide os dados em intervalos (bins) e mostra quantos valores estão em cada intervalo.
+                              <br>Exemplo: analisar a distribuição de idades em um grupo.
+                            </p>
+                            <div>
+                              <code>
+                                <pre>
+
+      plt.hist([1, 2, 2, 3, 3, 3, 4, 5, 5], bins=5)  # Agrupa os valores em 5 intervalos
+      plt.show()
+                                </pre>
+                              </code>
+                            </div>
+                            <div>
+                              <img src="imagens/exemplo_grafHistograma_html.png" alt="gráfico simples de Histograma">
+                            </div>
+                            
+                          </li>
+                          <li>
+                            <strong>Gráfico de Pizza (plt.pie(valores)):</strong>
+                            <p>
+                              Mostra proporções ou partes de um todo, útil para dados categóricos em percentual.
+                              <br>Exemplo: divisão do orçamento por setores.
+                            </p>
+                            <div>
+                              <code>
+                                <pre>
+
+      quantidades_vendidas = [45, 30, 15, 10]
+
+      plt.pie(quantidades_vendidas)
+
+      plt.show()
+                                </pre>
+                              </code>
+                            </div>
+                            <div>
+                              <img src="imagens/exemplo_grafpizza_html.png" alt="gráfico de pizza, simples">
+                            </div>
+                            
+                          </li>
+                        <!--esse ol é a lista do 'Escolha do Tipo de Gráfico' 
+                               ele esta dizendo os tipos de gráficos :>  -->
+                        </ol>
+                        
+                      </div>
+                    </li>
+                  </ol>
+                </li>  
+              </div>
+              <div>
+                <li>
+                  <h3>Personalização</h3>
+                  <p>
+                    Personalizar gráficos no Pyplot do Matplotlib é uma maneira poderosa de tornar suas visualizações mais
+                     expressivas, adaptadas a contextos específicos ou esteticamente agradáveis. A personalização permite alterar elementos como cores, tamanhos, estilos de linhas, rótulos, fontes e muito mais.
+                  </p>
+                  <p>Aqui está uma visão abrangente sobre como personalizar gráficos:</p>
+                  <p></p>
+                  <hr>
+                  <p></p>
+                  <div>
+                    <ol>
+                      <li>
+                        <strong>Estilo de Linhas e Marcadores</strong>
+                        <ul>
+                          <li>
+                            <p>
+                              <strong>Estilo de Linhas (linestyle)</strong> : Modifique o estilo da linha com opções como contínua ('-'), tracejada ('--'), pontilhada (':') ou alternada ('-.').
+                            </p>
+                            <div>
+                              <div>
+                                <code>
+                                  <pre>
+          # para mudar o tipo da linha você pode só alterar oque está no linestyle                         
+          plt.plot(x, y, linestyle='-')  # Linha contínua
+          plt.title("linha contínua")
+
+                                  </pre>
+                                </code>
+                              </div>
+                              <div>
+                                <img src="imagens/grafico_linhacom2.png" alt="demonstração de gráfico com linha contínua">
+                              </div>
+
+                            </div>
+
+                          </li>
+                          <li>
+                            <div>
+                              <strong>Sem Linha</strong>
+                              <p>Se você deseja omitir a linha, pode usar linestyle=''.</p>
+                              <div>
+                                <code>
+                                  <pre>
+        plt.plot(x, y, linestyle='')  # Apenas marcadores
+                                  </pre>
+                                </code>
+                              </div>
+                            </div>
+                            
+                          </li>
+                          <li>
+                            <p><strong>Exemplo com Todos os Estilos</strong> </p>
+                            <div>
+                              <code>
+                                <pre>
+
+        import matplotlib.pyplot as plt
+        import numpy as np
+
+        x = np.linspace(0, 10, 100)
+        y = np.sin(x)
+
+        estilos = ['solid', 'dashed', 'dotted', 'dashdot']
+        nomes = ['Linha Contínua', 'Linha Tracejada', 'Linha Pontilhada', 'Linha Traço-Ponto']
+
+        plt.figure(figsize=(10, 6))
+        for i, estilo in enumerate(estilos):
+          plt.plot(x, y + i, linestyle=estilo, label=nomes[i])
+
+        plt.title('Estilos de Linha no Matplotlib')
+        plt.xlabel('Eixo X')
+        plt.ylabel('Eixo Y')
+        plt.legend()
+        plt.grid(True)
+        plt.show()
+
+                                </pre>
+                              </code>
+                            </div>
+                            <img src="imagens/grafico_linhacom3.png" alt="gráfico com todos os estilos">
+                          </li>
+                           
+                        </ul>
+                        
+                      </li>
+                      
+                      <!-- esse ol são os estilos de Personalização-->
+                    </ol>
+
+                    <!-- essa div fala das personalificações -->
+                  </div>
+                  <!--      essa linha estão os h3
+                  como Personalização, Criação do Gráfico etc.-->
+                </li>
+              </div>
+            </ol>
+          </li>
+          
+        </div>
+        
+        
+      </ol>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>    

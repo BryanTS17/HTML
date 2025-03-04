@@ -1,0 +1,530 @@
+:root {
+  --cor-primaria: #f56e06;
+  --cor-secundaria: #ffffff;
+  --cor-contraste: #333333;
+  --cor-apoio: #ffd700;
+  --cor-gradiente: #fa983a;
+  --cor-apoio1: #E0115F;
+  --cor-apoio2: #734F96;
+  --cor-apoio3: #6B8E23;
+  --cor-apoio4: #CC5500;
+  --cor-apoio5: #008080;
+  --cor-apoio6: #06f5a1;
+  --cor-apoio7: #7a06f5;
+  --cor-apoio8: #1f8cff;
+  --cor-apoio9: #0656f5;
+}
+ 
+  body {
+  margin-right: 2rem;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f56e06;
+  border-radius: 2rem;
+  color: #fff;
+ }
+
+ ol {
+  list-style: none;
+ }
+
+ /*
+ 
+ li{
+  list-style: none;
+ }
+
+ */
+
+#h1FormatosdeDadosAceitos{
+  margin-top: 2rem;
+}
+
+ .divs {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.8rem;
+  margin: 2rem 2rem 2rem 2rem;
+  padding: 1.5rem 1.5rem;
+ }
+
+ #importacao {
+  margin: 2rem 37rem 2rem 37rem;
+ }
+ #importa {
+  text-align: center;
+ }
+
+ .p_center{
+  text-align: center;
+ }
+
+ .span_negrito {
+  font-weight: 600;
+ }
+
+ .ul_normal {
+  color: #000;
+ }
+
+ .ul_normal ::marker{
+  color: #000;
+ }
+
+ .li_normal {
+  color: #000;
+ }
+
+ .li_normal ::marker{
+  color: #000;
+ }
+
+  ul.ul_normal #li_normal::marker{
+  color: #000;
+ }
+
+ .lista_ol li{
+  color: #f56e06;
+ }
+
+ .etapas {
+  color: #f56e06;
+  font-size: 1.8rem;
+  margin-block-start: 0.2rem;
+  margin-left: 1rem;
+ }
+
+ .divs_com_img {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.8rem;
+  margin: 4rem 12rem 4rem 12rem;
+  padding: 1.5rem 1.5rem;
+ }
+
+  .div_lista_lista_ul {
+    background-color: #ddd;
+    padding: 2rem;
+    margin: 0rem 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0.3rem 0.5rem 2rem #636363cc;
+  }
+
+ .class_pergumtas {
+  color: #f56e06;
+  font-size: 2rem;
+  margin-left: 2.5rem;
+ }
+
+ .exemplos_center {
+  display: block;
+  color: #fa983a;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+ }
+
+ .impor_h1 {
+  color: #fff;
+  font-size: 2.8rem;
+ }
+
+ #falsoh1 {
+  margin-block-end: 0;
+ }
+
+ #div_falsoh1 {
+  border-bottom: solid 0.7rem #ffd700 ;
+ }
+
+ .div_img_center {
+  margin:auto;
+  margin-left: 10rem;
+  margin-right: 10rem;
+ }
+
+ .code_div_img_center {
+  margin-left: 7rem;
+  text-align: start;
+  display: inline;
+ }
+
+ .code_div_img_center1 {
+  margin-left: 14rem;
+  text-align: start;
+  display: inline;
+ }
+
+ .item_FormatosdeDadosAceitos {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--cor-primaria);
+ }
+
+ h3 .title_PreparaçãodosDado{
+  color: var(--cor-apoio4);
+  font-size: 1.7rem;
+ }
+
+ .div_python {
+  background-color: #999;
+  text-align: start;
+  color: #33f;
+  display: inline-block;
+  margin-right: 3rem;
+  margin-left: 7rem;
+  padding-right: 18.1rem;
+  border-radius: 0.7rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+ }
+
+ .sem_destaque {
+  font-weight: 600;
+  color: #000;
+  font-size: 1rem;
+ }
+
+ .cp {
+  color: #f56e06;
+ }
+
+ .v {
+  color: #E0115F;
+ }
+
+ .r {
+  color: #734F96;
+ }
+
+ .ve {
+  color: #6B8E23;
+ }
+
+ .l {
+  color: #CC5500;
+ }
+
+ .az {
+  color: #008080;
+ }
+
+ .g {
+  color: #fa983a;
+ }
+
+ .gc {
+  color: #d6a170;
+ }
+
+ .ae {
+  color: var(--cor-apoio8);
+ }
+
+ .vab {
+  color: var(--cor-apoio6);
+ }
+
+ .c {
+  color: #666;
+ }
+
+ .p {
+  color: #000;
+ }
+
+ #div_python {
+  background-color: #999;
+  text-align: start;
+  color: #33f;
+  display: inline-block;
+  margin-right: 3rem;
+  margin-left: 9.5rem;
+  padding-right: 17.93rem;
+  border-radius: 0.7rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+ }
+
+.p_sem_baixo {
+  margin-block-end: 0;
+}
+
+ .lista_sem_marker {
+  list-style-type: none;
+  marker: none;
+  list-style: none;
+ }
+
+ .pre_div_img_center {
+  color: #ddd;
+  background-color: #333333;
+  border: solid 0.1rem #999;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  border-top-left-radius: 0rem ;
+  border-top-right-radius: 0rem ;
+  margin-left: 7rem;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: start;
+  display: inline-block;
+ }
+ 
+ .pre_div_img_center1 {
+  color: #ddd;
+  margin-left: 5.5rem;
+  border: solid 0.1rem #999;
+  background-color: #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  border-top-left-radius: 0rem ;
+  border-top-right-radius: 0rem ;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: start;
+  display: inline-block;
+ }
+
+ .precode {
+  color: #ddd;
+  border: solid 0.1rem #999;
+  border-radius: 0.7rem;
+  background-color: #333333;
+  border-top-left-radius: 0rem ;
+  border-top-right-radius: 0rem ;
+  padding: 0.5rem 1rem;
+  margin-block-end: 2rem;
+  margin-block-start: 0;
+  padding-top: 1rem;
+  text-align: start;
+ }
+
+ .div_code {
+  background-color: #999;
+  text-align: start;
+  color: #33f;
+  padding-right: 17.93rem;
+  border-radius: 0.7rem;
+  margin-block-start: 2rem;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+ }
+
+ .p_code {
+  margin-block-end: 0;
+  margin-block-start: 0;
+ }
+
+ .img_div_img_center {
+  margin-left: 24rem;
+  display: contents;
+ }
+
+ .imgs_juntas1 {
+  margin-left: 5rem;
+  margin-top: 2rem;
+ }
+
+  #header {
+    text-align: center;
+    padding: 0;
+    padding: 2rem;
+    margin: 0;
+    background: linear-gradient(0deg, #f56e06, #fa983a);
+    border-bottom: solid 0.7rem #ffd700;
+  }
+
+  h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: center;
+    color: #fff;
+  }
+
+  #p_baixo_h1 {
+    margin-block-start: 0.5em;
+  }
+
+  #div_introducao{
+    color: #000;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 2rem 2rem 2rem 2rem;
+    text-align: start;
+    padding: 1.5rem 1.5rem;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    margin: auto;
+    margin: 1rem;
+    color: #333333;
+    margin-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+    font-size: 1.9rem;
+  }
+
+  p {
+    padding: 0.3rem;
+    margin: 0.6rem, 5rem;
+
+  }
+
+  #xxxlinha_laramja {
+    margin-inline-end: 0rem;
+    margin-inline-start: 0rem;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    padding: 0rem;
+    background-color: #ffd700;
+  }
+
+  #p_falsoh1 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-block-start: 0;
+    margin-block-end: 2rem;
+  }
+
+  #preparacao_h3 {
+    margin-top: 3rem;
+    margin-left: 0rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 2.6rem;
+  }
+
+  #lista_ul ::marker {
+    marker: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #fa983a;
+    list-style-type: none;
+    margin-block-end: 0rem;
+    margin-inline-end: 0rem;
+    margin-bottom: 0;
+  }
+
+  #lista_ul {
+    margin-bottom: 0;
+    margin-block-end: 0;
+  }
+
+  #div_preparacao {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  #div_FormatosdeDadosAceitos {
+    display: inline-block;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: #ddd;
+    box-shadow: 0.3rem 0.5rem 2rem #636363cc;
+  }
+
+  #div_Correspondênciaentrexey {
+    display: inline-block;
+    width: 40rem;
+    height: 22rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    padding: 1rem;
+    background-color: #ddd;
+    box-shadow: 0.3rem 0.5rem 2rem #636363cc;
+  }
+
+  #div_resumo {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  /* 
+  agora é o css do Formatos de Dados Aceitos
+  */
+
+  .divs_div_preparacao_formadosaceitos {
+    background-color: #fff;
+    /*   background-image: linear-gradient(to right, #fff, transparent);   */
+    color: #000;
+    border-radius: 1rem;
+    border-left: 0.6rem solid #333333;
+    margin: 4rem 2rem 2rem 2rem;
+    padding: 1.5rem 1.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 2rem 5rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    box-shadow: 0.4rem 0.4rem 1rem #3337;
+  }
+
+  #div_preparacao_fim {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 0.8rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    margin-bottom: 0rem;
+    margin-block-end: 0rem;
+  }
+
+  #footer_pagina_formados_de_dados_aceitos {
+    background-color: #333333;
+    border-radius: 0.8rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+    padding: 1rem;
+    margin: 10rem;
+    margin-top: 0rem;
+    margin-left: 12.5rem;
+    text-align: center;
+  }
+
+  #a_fixa_formados_de_dados_aceidos {
+    position: fixed;
+    margin-top: 0;
+    color: #fff;
+    padding: 0.5rem 54.19rem;
+    background-color: #333333;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }   
+
+  a.a_branco {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a.a_branco:hover{
+    color: #3f51f7;
+  }
+
+  a.a_branco:active{
+    color: #9191ff;
+  }
+
+  a.a_branco:visited{
+    color: #fff;
+  }
+
+  #a_branco1_formados_de_dados_aceitos {
+    
+    color: #fff;
+    display: block;
+  }
+
+
+

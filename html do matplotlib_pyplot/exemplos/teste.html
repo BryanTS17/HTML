@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do matplotlib.pyplot</title>
+    <style>
+        :root {
+            --cor-primaria: #f56e06;
+            --cor-secundaria: #ffffff;
+            --cor-contraste: #333333;
+            --cor-apoio: #ffd700;
+            --cor-gradiente: #fa983a;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, var(--cor-primaria), var(--cor-gradiente));
+            color: var(--cor-secundaria);
+            text-align: center;
+            padding: 20px;
+            border-bottom: 4px solid var(--cor-apoio);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-contraste);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        section h2 {
+            color: var(--cor-primaria);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        section ul li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--cor-contraste);
+            color: var(--cor-secundaria);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guia do matplotlib.pyplot</h1>
+        <p>Uma introdução completa à criação de gráficos em Python</p>
+    </header>
+    <main>
+        <section>
+            <h2>O que é matplotlib.pyplot?</h2>
+            <p>O <strong>matplotlib.pyplot</strong> é uma biblioteca essencial para visualização de dados em Python. Ele permite criar gráficos de forma simples e personalizável.</p>
+        </section>
+        <section>
+            <h2>Recursos Principais</h2>
+            <ul>
+                <li>Criação de gráficos de linha, barras, dispersão e mais</li>
+                <li>Personalização completa dos elementos gráficos</li>
+                <li>Integração com pandas e numpy</li>
+                <li>Possibilidade de criar gráficos 3D</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Exemplo de Código</h2>
+            <pre><code>
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+plt.plot(x, y, color='#f56e06', marker='o')
+plt.title("Gráfico de Exemplo")
+plt.show()
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Guia matplotlib.pyplot | Desenvolvido para aprender
+    </footer>
+</body>
+</html>

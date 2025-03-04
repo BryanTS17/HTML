@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatos de Dados Aceitos</title>
+  <link rel="stylesheet" href="../css_matplotlib_pyplot.css">
+</head>
+<body>
+    <div id="a_fixa_formados_de_dados_aceidos">
+        <a class="a_branco" id="a_branco1_formados_de_dados_aceitos" href="../pagina principal do matplotlib.pyplot.html">ir para página principal</a>
+    </div>
+  <div id="header">
+    
+    <h1 id="h1FormatosdeDadosAceitos">Formatos de Dados Aceitos</h1>
+    <p id="p_baixo_h1">todos formados Aceitos pelo matplotlib.pyplot</p>
+  
+  </div>
+  <div>
+    <ul id="lista_ul">
+      <div class="divs_div_preparacao_formadosaceitos" id="div_preparacao" >
+
+          <h3>
+          <span class="title_PreparaçãodosDado">1. <strongn>Formatos de Dados Aceitos</strongn></span> 
+          </h3>   
+
+        <p>
+          O Pyplot é muito flexível e aceita diversos formatos de dados para os eixos x e y:
+        </p>
+        <br>
+        <br>
+        <div class="div_lista_lista_ul">
+          <li class="lista_sem_marker">
+              <p><strong class="item_FormatosdeDadosAceitos">Listas Python (list)</strong>:</p>
+              <p>  
+                <strong class="sem_destaque">Boa compatibilidade:</strong> 
+                São suportadas nativamente pelo Pyplot, sem a necessidade de bibliotecas adicionais.<br><br><strong>Flexíveis:</strong> Permitem a inclusão de diferentes tipos de dados, embora o Pyplot geralmente exija valores numéricos.
+                <br>
+              </p>
+              <strong>Quando usar:</strong>
+              <ul id="lista_ul2">
+                <br>
+                <li><span class="g">Quando você tem dados pequenos e já organizados.</span></li>
+                <li><span class="g">Para experimentos rápidos ou prototipagem</span>.</li>
+                <li><span class="g">Para gráficos simples e diretos, como linhas ou dispersões.</span></li>
+              </ul>
+              <br>
+              <strong>Exemplo de aplicação:</strong>
+              <p>Criar um gráfico básico para um conjunto pequeno de valores</p>
+              <div>
+                <code>
+                  <div class="div_code">
+                    <p class="p_code">Python</p>
+                  </div>
+                  <pre class="precode">
+    x <span class="v">=</span> [<span class="g">1, 2, 3, 4, 5</span>]
+    y <span class="v">=</span> [<span class="g">1, 4, 9, 16, 25</span>]
+                  </pre>
+                </code>
+              </div>
+          </li>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+      </div>
+        
+      <div class="divs_div_preparacao_formadosaceitos" id="div_preparacao" >
+        <div class="div_lista_lista_ul">
+          <li class="lista_sem_marker">
+            <p><strong class="item_FormatosdeDadosAceitos">Tuplas Python (tuple)</strong>:</p>
+            <p><strong>Imutabilidade:</strong> Tuplas garantem que os dados não serão alterados acidentalmente.</p>
+            <p><strong>Eficiência:</strong>Consomem menos memória que listas, o que pode ser vantajoso em aplicações que exigem desempenho.</p>
+            <strong>Quando usar:</strong>
+            <ul id="lista_ul3">
+              <br><li><span class="g">Quando os dados são estáticos e não precisam ser alterados durante a execução.</span></li>
+              <li><span class="g">Para conjuntos de dados pequenos que você deseja proteger contra modificações.</span></li>
+            </ul>
+            <br>
+            <strong>Exemplo de aplicação:</strong>
+            <p>Gráficos em que os valores são fixos, como dados pré-determinados de uma função:</p>
+            <div>
+              <code>
+                <div class="div_code">
+                  <p class="p_code">Python</p>
+                </div>
+                <pre class="precode">
+    x <span class="v">=</span> (<span class="r">1, 2, 3, 4, 5</span>)
+    y <span class="v">=</span> (<span class="r">1, 4, 9, 16, 25</span>)
+                </pre>
+              </code>
+            </div>
+          </li>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+      </div>  
+      <div class="divs_div_preparacao_formadosaceitos" id="div_preparacao" >
+        <div class="div_lista_lista_ul">
+          <li class="lista_sem_marker">
+              <p><strong class="item_FormatosdeDadosAceitos">Arrays NumPy (numpy.array)</strong>:</p>
+              <p>  
+                <strong class="sem_destaque">operações vetorizadas:</strong> 
+                Suportam operações matemáticas vetorizadas (cálculos em todos os elementos de uma vez).
+                <br>
+                <br>
+                <strong class="sem_destaque">dimenções:</strong>
+                Podem ser unidimensionais (1D) ou multidimensionais (2D, 3D, etc.).
+                <br>
+                <br>
+                <strong class="sem_destaque">operações Avançadas:</strong>
+                um array do numpy tem suporte para calculos científicos, Operações Matemáticas Avançadas, Álgebra Linear, Suporte a Grandes Volumes de Dados e muito mais.
+              </p>
+              <strong>Quando usar:</strong>
+              <ul id="lista_ul2">
+                <br>
+                <li><span class="g">Quando os dados são grandes e requerem manipulação matemática avançada.</span></li>
+                <li><span class="g">Quando você precisa de desempenho ao processar ou manipular os dados.</span>.</li>
+              </ul>
+              <br>
+              <strong>Exemplo de aplicação:</strong>
+              <div>
+                <code>
+                  <div class="div_code">
+                    <p class="p_code">Python</p>
+                  </div>
+                  <pre class="precode">
+
+    <span class="v">import</span> matplotlib.pyplot <span class="v">as</span> plt
+    <span class="v">import</span> numpy <span class="v">as</span> np
+
+    x = np.array([<span class="r">1, 2, 3, 4, 5</span>])
+    y = x <span class="v">**</span> <span class="r">2</span>  <span class="c"># Eleva cada elemento ao quadrado</span>
+
+    plt.plot(x, y)
+    plt.title(<span class="l">"Exemplo com Arrays NumPy"</span>)
+    plt.show()
+
+  _                </pre>
+                </code>
+              </div>
+          </li>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+      </div> 
+        
+      <div class="divs_div_preparacao_formadosaceitos" id="div_preparacao" >
+        <div class="div_lista_lista_ul">
+          <li class="lista_sem_marker">
+              <p><strong class="item_FormatosdeDadosAceitos">DataFrames do pandas (pandas.DataFrame)</strong>: Quando os dados vêm de uma tabela, é comum usar pandas para manipulação e seleção</p>
+              <p>  
+                <strong>Descrição:</strong>
+              </p>
+              <ul class="ul_normal">
+                <li id="li_normal">Um DataFrame é uma estrutura tabular do Pandas, semelhante a uma tabela de banco de dados ou planilha Excel.</li>
+                <li id="li_normal">Cada coluna de um DataFrame pode ser interpretada como uma lista ou array.</li>
+              </ul>
+              <br>
+              <strong>Quando usar:</strong>
+              <ul id="lista_ul2">
+                <br>
+                <li><span class="g">Quando os dados são estruturados em tabelas (ex.: linhas e colunas).</span></li>
+                <li><span class="g">Para visualização de tendências ou comparações entre categorias (ex.: vendas por ano, crescimento populacional).</span></li>
+                <li><span class="g">Quando é necessário limpar ou transformar os dados antes de plotar.</span></li>
+              </ul>
+              <br>
+              <strong>Exemplo de aplicação:</strong>
+              <div>
+                <code>
+                  <div class="div_code">
+                    <p class="p_code">Python</p>
+                  </div>
+                  <pre class="precode">
+    <span class="v">import</span> pandas <span class="v">as</span> pd
+    <span class="v">import</span> matplotlib.pyplot <span class="v">as</span> plt
+
+    <span class="c"># Criando o DataFrame</span>
+
+    df = pd.DataFrame({
+    <span class="g">'Ano'</span>: [<span class="r">2018, 2019, 2020, 2021</span>],
+    <span class="g">'Vendas'</span>: [<span class="r">150, 200, 250, 300</span>]
+    })
+
+    <span class="c"># Extraindo dados para os eixos</span>
+    x = df[<span class="g">'Ano'</span>]
+    y = df[<span class="g">'Vendas'</span>]
+
+    plt.plot(x, y, <span class="l">marker</span>=<span class="g">'o'</span>)
+    plt.title(<span class="g">"Exemplo com DataFrame do Pandas"</span>)
+    plt.show()
+
+                  </pre>
+                </code>
+              </div>
+          </li>
+        </div>
+        <p></p>
+        <hr>
+        <p></p>
+      </div>  
+      <div class="divs_div_preparacao_formadosaceitos" id="div_preparacao_fim">
+        <div class="div_lista_lista_ul">
+          <li class="lista_sem_marker">
+            <p><strong class="item_FormatosdeDadosAceitos">Valores Calculados</strong>: Você pode calcular os valores diretamente</p>
+            <p>  
+              <strong>Descrição:</strong>Em muitos casos, os dados do gráfico não vêm de uma fonte externa, mas são calculados dinamicamente usando expressões matemáticas ou loops.
+            </p>
+            <p><strong>dados dinamicos:</strong> Permite gerar dados no momento da execução.</p>
+            <p><strong>gráficos matemáticos:</strong>Útil para gráficos que representam funções matemáticas ou padrões.</p>
+            <strong>Quando usar:</strong>
+            <ul id="lista_ul3">
+              <br><li><span class="g">Quando os dados dependem de uma regra matemática ou precisam ser gerados no momento do uso.</span></li>
+              <li><span class="g">Para gráficos de funções ou simulações.</span></li>
+            </ul>
+            <br>
+            <strong>Exemplo de aplicação:</strong>
+            <p>GPlotar gráficos de funções matemáticas:</p>
+            <div>
+              <code>
+                <div class="div_code">
+                  <p class="p_code">Python</p>
+                </div>
+                <pre class="precode">
+    <strong class="v">import</strong> matplotlib.pyplot <strong class="v">as</strong> plt
+
+    x = <strong class=""></strong>range(<strong class=""></strong>0, 10)  <strong class="c"># Valores de 0 a 9</strong>
+    y = [i<strong class="v">**</strong><strong class="r">2</strong> <strong class="v">for</strong> i <strong class="v">in</strong> x]  <strong class="c"># Quadrado de cada valor</strong>
+
+    plt.plot(x, y)
+    plt.title(<strong class="g">"Exemplo com Valores Calculados"</strong>)
+    plt.show()
+
+                </pre>
+              </code>
+            </div>
+          </li>
+        </div>
+        <p class="p_sem_baixo"></p>
+      </div>
+      </div>
+      <footer id="footer_pagina_formados_de_dados_aceitos">
+        &copy; 2024 formados Aceitos no pyplot | Desenvolvido para aprender
+      </footer>  
+        
+    </ul>
+    
+</body>
+</html>

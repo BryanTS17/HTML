@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css_tipos_graficos_matplotlib_pyplot.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+      <h1>principais tipos de gráficos</h1>
+      <p id="p_baixo_h1">os gráficos mais utilizados no pyplot</p>
+  </header>
+  <main>
+    <div>
+      <div class="divs1">
+            <h2><strong>Escolha do Tipo de Gráfico</strong></h2>
+
+            <p>
+              Os gráficos são ferramentas essenciais para visualizar e interpretar dados.
+               O Pyplot oferece diversas opções para criar gráficos que atendem a diferentes necessidades.
+                Aqui estão os tipos mais utilizados, suas características e aplicações:
+            </p>
+      </div>
+          <div class="divs">
+            
+            <div class="invisivel_divs">
+              <di>
+                  <h3><strong> Gráfico de Linha (plt.plot):</strong></h3>
+                  <p>
+                    O gráfico de linha é amplamente utilizado para mostrar 
+                    a relação entre variáveis ao longo de um intervalo contínuo. Ele conecta os pontos de dados com linhas, ajudando a visualizar tendências e mudanças ao longo do tempo.
+                  </p>
+                  <p class="cp">Características:</p>
+                  <ul>
+                    <li>Indicado para dados sequenciais ou temporais.</li>
+                    <li>Destaca variações suaves e contínuas.</li>
+                    <li>Facilita a comparação entre múltiplas séries de dados em um único gráfico.</li>
+                  </ul>
+                  <p class="cp">Quando usar:</p>
+                  <ul>
+                    <li>Ideal para visualizar séries temporais, como flutuações de preço, crescimento de audiência, ou evolução de métricas.</li>
+                    <li>Também é útil para monitorar tendências, como o desempenho de uma empresa ou progresso acadêmico.</li>
+                  </ul>
+                  <p><span class="exemplos"><strong>Exemplo:</strong> média de usuários ao longo do ano.</span></p>
+                  <div>
+                      <pre><code>
+meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+novos_usuarios = [100, 80, 110, 130, 130, 160, 170, 120, 110, 150, 200, 140]
+
+plt.plot(meses, novos_usuarios)  # Cria uma linha conectando os pontos (1, 4), (2, 5) e (3, 6)
+
+plt.title("média de usuários ao longo do ano")
+plt.ylabel("usuários (em milhar)")
+
+plt.show()
+                      </code></pre>
+                  </div>
+                  <div>
+                    <img class="img_center" src="../imagens/nova_exemplo_grafico_plot.png" alt="gráfico simples de linha">
+                  </div>
+                  <p class="porque"><span class="cp">Por que usar</span>: Ele oferece uma maneira intuitiva de interpretar dados contínuos, destacando mudanças de forma clara.</p>
+            </div>
+          </div>
+          
+          <div class="divs">
+            <div class="invisivel_divs">
+                  <h3><strong>Gráfico de Dispersão (plt.scatter):</strong></h3>
+                  <p>Este tipo de gráfico utiliza pontos no plano cartesiano para representar pares de valores, sendo excelente para identificar correlações e padrões.</p>
+                  <p class="cp">Características:</p>
+                  <ul>
+                    <li>Mostra a relação entre duas variáveis quantitativas.</li>
+                    <li>Útil para detectar agrupamentos, tendências ou outliers nos dados.</li>
+                    <li>Permite personalização, como variação no tamanho ou cor dos pontos para representar dimensões adicionais.</li>
+                  </ul>
+                  <p class="cp">Quando usar:</p>
+                  <ul>
+                    <li>Para explorar a relação entre fatores, como tempo de prática esportiva e desempenho físico, ou entre preço e demanda de um produto.</li>
+                  </ul>
+                  <p><span class="exemplos"><strong>Exemplo:</strong> nota e tempo de estudo de 20 alunos.</span></p>
+                    <div>
+                      <code>
+                        <pre>
+
+tempo_estudo = [1, 3.5, 1, 3, 2.5, 7, 1, 3, 3, 5.3, 7, 6, 4, 4.3, 3, 6, 6, 5, 5, 2, 4.7]
+notas = [3, 7, 2, 4, 5, 9, 5, 8, 5, 9, 10, 8, 7, 6, 8, 10, 8, 10, 9, 6, 7.2]
+
+plt.scatter(tempo_estudo, notas)  # Plota pontos individuais para cada par de (x, y)
+
+plt.title("Notas dos Alunos")
+plt.xlabel("Horas")
+
+plt.show()
+                        </pre>
+                      </code>
+                    </div>
+                    <div>
+                      <img class="img_center" src="../imagens/nova_exemplo_grafico_scetter.png" alt="gráfico simples de dispersão">
+                    </div>
+                    <p class="porque"><span class="cp">Por que usar</span>: Proporciona uma visão clara de como uma variável influencia outra, ajudando a responder perguntas como:
+                       "Quanto mais uma pessoa estuda, melhores são suas notas?"</p>
+            </div>
+          </div>
+              
+            <div class="divs">
+              <div class="invisivel_divs">
+                <h3><strong>Gráfico de Barras (plt.bar):</strong></h3>
+                  <p>
+                    O gráfico de barras é uma das formas mais comuns de visualização para comparar valores de diferentes categorias.
+                  </p>
+                  <p class="cp">Características:</p>
+                  <ul>
+                    <li>As barras verticais ou horizontais são proporcionais aos valores representados.</li>
+                    <li>Permite comparar diretamente várias categorias de forma visualmente impactante</li>
+                    <li>Suporte para gráficos agrupados ou empilhados para análises mais detalhadas.</li>
+                  </ul>
+                  <p class="cp">Quando usar:</p>
+                  <ul>
+                    <li>Perfeito para visualizar vendas mensais, desempenho por equipe ou preferência por diferentes produtos ou serviços.</li>
+                  </ul>
+                  <p><span class="exemplos"><strong>Exemplo:</strong> Comparar a receita mensal de uma loja ao longo dos anos.</span></p>
+                  <div>
+                    <code>
+                      <pre> 
+receita_mensal = [10000, 7000, 9800, 20000, 17000]
+meses = ["2021", "2022", "2023", "2024", "2025"]
+
+plt.bar(meses, receita_mensal)  # Plota barras com alturas baseadas nos valores
+
+plt.title("receita mensal")
+plt.ylabel("média da receita")
+
+plt.show() 
+                      </pre>
+                    </code>
+                  </div>
+                  <div>
+                    <img class="img_center" src="../imagens/novo_grafico_barras.png" alt="gráfico simples de barras">
+                  </div>
+                  <p class="porque"><span class="cp">Por que usar</span>: Ajuda a identificar rapidamente as diferenças e semelhanças entre categorias.</p>
+                  
+                </li>
+              </div>
+                
+            </div>
+                <div class="divs">
+                  <div class="invisivel_divs"> 
+                    <h3><strong>Histograma (plt.hist(dados, bins=n)):</strong></h3>
+                    <p>
+                      Representa a distribuição de frequência de um conjunto de dados. Divide os dados em intervalos (bins) e mostra quantos valores estão em cada intervalo.
+                    </p>
+                    <p class="cp">Características:</p>
+                    <ul>
+                      <li>Mostra a frequência com que os dados caem dentro de certos intervalos.</li>
+                      <li>Permite detectar padrões como dispersão, centralidade e outliers.</li>
+                      <li>Flexível na escolha do número de bins, o que pode impactar a visualização.</li>
+                    </ul>
+                    <p class="cp">Quando usar:</p>
+                    <ul>
+                      <li>Ideal para análises de dados contínuos, como distribuição de idades, altura, peso ou notas.</li>
+                    </ul>
+                    <p><span class="exemplos"><strong>Exemplo:</strong></span></p>
+                    <div>
+                      <code>
+                        <pre>
+
+  plt.hist([1, 2, 2, 3, 3, 3, 4, 5, 5], bins=5)  # Agrupa os valores em 5 intervalos
+  plt.show()
+                        </pre>
+                      </code>
+                    </div>
+                    <div>
+                      <img class="img_center" src="../imagens/novo_grafico_hist.png" alt="gráfico simples de Histograma">
+                    </div>
+                    <p class="porque"><span class="cp">Por que usar</span>: Ele destaca de forma clara onde os dados estão concentrados, permitindo análises detalhadas da variabilidade dos dados.</p>
+                    
+                    </li>
+                  </div>
+                  
+                </div>
+                <div class="divs">
+                  <div class="invisivel_divs">
+                    <h3><strong>Gráfico de Pizza (plt.pie(valores)):</strong></h3>
+                    <p>
+                      Mostra proporções ou partes de um todo, útil para dados categóricos em percentual.
+                    </p>
+                    <p class="cp">Características:</p>
+                    <ul>
+                      <li>Fácil de interpretar visualmente quando há poucas categorias.</li>
+                      <li>Útil para mostrar divisões de recursos ou participações de mercado.</li>
+                      <li>Pode incluir rótulos e destaques (como destacar a maior fatia).</li>
+                    </ul>
+                    <p class="cp">Quando usar:</p>
+                    <ul>
+                      <li>Ideal para mostrar como um total é distribuído entre várias categorias, como orçamentos, divisão de despesas ou participação de votos.</li>
+                    </ul>
+                    <p><span class="exemplos"><strong>Exemplo:</strong>divisão do orçamento por protudos.</span></p>
+                    <div>
+                      <code>
+                        <pre>
+
+  quantidades_vendidas = [45, 30, 15, 10]
+  nomes = ["batata", "batata frita", "pizza", "queijo"]
+
+  plt.pie(quantidades_vendidas, labels=nomes)
+  plt.title("divisão do orçamento por setores")
+
+  plt.show()
+                        </pre>
+                      </code>
+                    </div>
+                      <div>
+                      <img class="img_center" src="../imagens/novo_grafico_pie.png" alt="gráfico de pizza, simples">
+                    </div>
+                    <p class="porque"><span class="cp">Por que usar</span>: Ele comunica de forma intuitiva e rápida como diferentes partes contribuem para o todo.</p>
+                    </li>
+                  </div>
+                  
+                  
+                </div>
+                
+              <!--esse ol é a lista do 'Escolha do Tipo de Gráfico' 
+                     ele esta dizendo os tipos de gráficos :>  -->
+              </ol>
+              
+            </div>
+  </main>
+  <footer>
+    <p> © 2024 tipos de gráficos | feito para aprender</p>
+  </footer>
+</body>
+</html>
